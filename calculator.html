@@ -4,32 +4,41 @@
         <meta charset="utf-8">
         <title>Calculator</title>
         <link rel="stylesheet" href="./calculator.css">
-        <script src="./calculator.js"></script>
-    </head>
+        <script src="./calculator.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+     </head>
     <body>
         <div id="calculator">
-            <div id = num_container>
-                <div id = screen>screen</div>
-                <div id = pad>
-                    <div id = ac class = button>ac</div>
-                    <div id = backspace class = button>backspace</div>
-                    <div id = percentage class = button>%</div>
-                    <div id = divide class = button>/</div>
-                    <div id = 7 class = button>7</div>
-                    <div id = 8 class = button>8</div>
-                    <div id = 9 class = button>9</div>
-                    <div id = multiply class = button>*</div>
-                    <div id = 4 class = button>4</div>
-                    <div id = 5 class = button>5</div>
-                    <div id = 6 class = button>6</div>
-                    <div id = subtract class = button>-</div>
-                    <div id = 1 class = button>1</div>
-                    <div id = 2 class = button>2</div>
-                    <div id = 3 class = button>3</div>
-                    <div id = add class = button>+</div>
-                    <div id = 0 class = button>0</div>
-                    <div id = period class = button>.</div>
-                    <div id = return class = button>=</div>
+            <div id = "num_container">
+                <div id = "screen">
+                    <div id = previous class = "screen_number"> previous value</div>
+                    <div id = current_expression class = "screen_number"> current expression</div>
+                </div>
+                <div id = "pad">
+                    <input type="button" id = ac class = "keypad" value="AC">
+                    <input type="button" id = backspace class = "keypad" value="C">
+                    <input type="button" id = percentage class = "keypad" value="%">
+                    <input type="button" id = divide class = "keypad" value="/">
+                    <input type="button" id = 7 class = "keypad" value="7">
+                    <input type="button" id = 8 class = "keypad" value="8">
+                    <input type="button" id = 9 class = "keypad" value="9">
+                    <input type="button" id = multiply class = "keypad" value="*">
+                    <input type="button" id = 4 class = "keypad" value="4">
+                    <input type="button" id = 5 class = "keypad" value="5">
+                    <input type="button" id = 6 class = "keypad" value="6">
+                    <input type="button" id = subtract class = "keypad" value="-">
+                    <input type="button" id = 1 class = "keypad" value="1">
+                    <input type="button" id = 2 class = "keypad" value="2">
+                    <input type="button" id = 3 class = "keypad" value="3">
+                    <input type="button" id = add class = "keypad" value="+">
+                    <input type="button" id = 0 class = "keypad" value="0">
+                    <input type="button" id = period class = "keypad" value=".">
+                    <input type="button" id = return class = "keypad return" value="=">
                 </div>
             </div>
         </div>

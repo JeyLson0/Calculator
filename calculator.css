@@ -1,13 +1,12 @@
 
 html {
     box-sizing: border-box;
-
 }
 
-* {
-    border: red dashed 1px;
-
+*{
+    border: red 1px dashed;
 }
+
 
 body {
     display: flex;
@@ -39,7 +38,7 @@ body {
 #num_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
     margin: 20px;
     width: 507px;
@@ -47,25 +46,53 @@ body {
 }
 
 #screen{
-    width: 500px;
-    height: 100px;
+    width: 465px;
+    height: 200px;
     background-color: white;
     border: black 1px solid;
 }
 
+#screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 20px;
+}
+
+.screen_number {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    max-width: 460px;
+}
+
+
 #pad {
-    display: flex;;
+    display: flex;
+    width: 505px;
+    height: 539px;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-
 }
 
-
-.button {
+.keypad {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    flex: 1 auto;
     width: 101px;
-    max-width: 101px;
     height: 90px;
     background-color: white;
-
+    border: 1px solid black;
 }
+
+.return {
+    width: 230px;
+    flex: 1 auto;
+}
+
+
