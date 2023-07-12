@@ -63,6 +63,8 @@ body {
 .screen_number {
     color: black;
     font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+    font-size: 32px;
     max-width: 460px;
 }
 
