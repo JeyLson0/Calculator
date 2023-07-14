@@ -32,6 +32,7 @@ body {
     flex-shrink: 0;
     border: 2px solid black;
     background-color: #81A4CD;
+    border-radius: 10px;
 
 }
 
@@ -92,7 +93,7 @@ body {
     border: 1px solid black;
 }
 
-.return {
+.evaluate {
     width: 230px;
     flex: 1 auto;
 }
